@@ -1,0 +1,122 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<float.h>
+#include<math.h>
+struct1 
+{
+    structta ilk olarak verilen noktalarin verileri dogru datada saklanacaktir(int veya float)
+};
+struct2
+{
+    diger dosya icin olusturulan struct  
+}
+int main()
+{   
+    veriler 1 dosyasi acilacak
+    veriler 2 dosyasi acilacak
+    eger dosyalar acilamamissa hata verip program sonlandirilacak
+    int index=0,i=0;
+    
+    gerekli intagerlar ve floatlar atanacak
+    
+    for dongusu icinde kodun kontrol mekanizmasi yazilacak
+ 
+    veri okuma:
+        while{ dongu icinde 
+            i>4 olacak sekilde fscanf le daha onceden belirledigimiz structa atiyacak (Eger varsa RGB degerleri atanacak)
+            kac tane deger oldugunu index e sakliyacagiz;
+            index++;
+            i++;
+        }
+        LOOP: olusturucaz 
+        Giris bilgileri ve menu konsola ve output.nkt dosyasina yazdirilacak
+          
+        Kullanicidan operasyon secmesi istenicek
+        
+        if operasyon==1
+        {
+            veri kontrolu:
+                 mekanizmaya gore eger degerler onceden atadigim degerlere esitse hata verip hangi sirada hata oldugunu soyluyecek
+                esit degilse hata vermeyip devam edecek
+        }
+        if operasyon==2
+        {
+            mini=FLT_MAX;
+            kullaniciya islem yapmak istedigi dosya sorulacak
+            scanf vericont
+            if vericont==1
+            {
+                1. dosya icin islemler yapicak
+                
+                Ic ice 2 for dongusuyle 
+                  uzaklik=sqrt(pow((noktax1-noktax2),2)+pow((noktay1-noktay2),2)+pow((noktaz1-noktaz2),2));
+            
+            if uzaklik<mini
+                mini=uzaklik
+                ve sonunda printf ile konsola minimum uzaklik ve ortalama uzaklik yazdirilacak
+            }
+            if vericont==2
+            {
+                2. dosya icin islemler yapicak
+                 ayni seyler 2. dosya icinde tekrarlanilacak
+            }
+            
+        }
+        if operasyon == 3
+        {
+            int locationX,locationY,locationZ hepsi 0'a atanacak
+            float maximumX,maximumY,maximumZ hepsi verilen structlarin ilk degerlerine atanacak
+            
+            for deger c  1 den baslayip index e kadar surecek surekli 1 articak
+            maximum deger bulunacak
+                if nokta[c].x>maximumX
+                maximumX=nokta[c].x
+                if nokta[c].y>maximumY
+                maximumY=nokta[c].y
+                if nokta[c].z>maximumZ
+                maximumZ=nokta[c].z
+                en sonunda maximum degerler yazdirilip kupun kenar noktalari bulunacak
+                
+        }
+        if operasyon== 4
+         hangi veri dosyasinda islem yapmak istedigi kullaniciya sorulacak
+         
+         if(vericont==1)
+         {   float x1,y1,z1;
+             float cx,cy,cz;
+             int r;
+             float kure;
+             int icindekiler;
+             kullanicidan merkezin 3 boyutlu koordinatlari istenicek
+             scanf cx,cy,cz;
+             kullanicidan kurenin yaricapi istenicek
+             scanf r;
+             for dongusu icinde Z integeriyla
+             {
+                 x1=pow((nokta[z].x-cx),2);
+                 y1=pow((nokta[z].y-cy),2);
+                 z1=pow((nokta[z].z-cz),2);
+                 kure=sqrt(x1+y1+z1);
+                 if kure<r
+                 {
+                     bu tanima uyan xyz noktalarini yazdirsin
+                     icindekiler++; 
+                 }
+                 
+             }
+             dosyanin icinde kac tane noktanin bu tanima uygun oldugunu icindekiler ile printle
+         }
+         if(vericont==2)
+         {
+             ayni seyleri 2. dosya icin tekrarla
+         }
+        
+        if operasyon==5
+            kullanici 5 e bastiginda program kapatilir
+        
+goto LOOP;
+
+dosyalari kapat        
+        
+    return 0;
+}

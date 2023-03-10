@@ -1,0 +1,3 @@
+Tum dosyalar sikistirilmis dosya icinde bulunmaktadir
+
+IEEE formatinda rapor ve kod icin yalanci kod dosyanin disinda bulunmaktadir.

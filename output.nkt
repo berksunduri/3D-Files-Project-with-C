@@ -1,0 +1,28 @@
+# Noktalar dosya format
+VERSION 1
+ALANLAR X Y Z
+ALANLAR X Y Z R G B
+NOKTALAR 10001
+NOKTALAR 84580
+
+Veriler1 dosyasi icin:
+Nokta degeri(X:99.999298, Bulundugu sira:5788, Renk Verileri: 230 189 126
+Nokta degeri(Y):99.962685, Bulundugu sira:8196, Renk Verileri: 152 79 99
+Nokta degeri(Z):99.977249, Bulundugu sira:2789, Renk Verileri: 60 59 167
+
+Veriler2 dosyasi icin:
+Nokta degeri(X):99.997841, Bulundugu sira:36550
+Nokta degeri(Y):99.998550, Bulundugu sira:32246
+Nokta degeri(Z):99.999435, Bulundugu sira:21605
+
+Merkezin 3 boyutlu koordinatini giriniz:(X Y Z)
+11.000000 22.000000 33.000000
+
+Yaricapi giriniz(intvalue):
+4
+X:12.370767 Y:24.180458 Z:34.632294
+X:8.805854 Y:23.009331 Z:29.951227
+X:8.639377 Y:23.750278 Z:35.298447
+X:9.503118 Y:21.103165 Z:30.817245
+Veriler1 Dosyasi icin
+En yakin uzaklik 0.078754 ve ortalama uzaklik: 43.386299
